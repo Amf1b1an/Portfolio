@@ -40,6 +40,8 @@ a {
 
 .txt {
     color: #F27F0C;
+    text-align: start;
+    font-size: 1.5rem;
 }
 
 
@@ -72,6 +74,7 @@ a {
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease-out;
+    gap: 2rem;
     
 }
 
@@ -85,6 +88,7 @@ a {
 .project-info {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
 }
 
 .arrow {
