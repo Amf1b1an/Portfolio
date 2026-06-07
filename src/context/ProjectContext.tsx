@@ -5,6 +5,8 @@ interface ProjectContextType {
   projects: Project[];
   directoryStructure: DirectoryNode[];
   getProjectsByTitles: (titles?: string[]) => Project[];
+  activeCategory: string | null;
+  setActiveCategory: (id: string | null) => void;
 }
 
 const ProjectContext = createContext<ProjectContextType | undefined>(undefined);
@@ -123,6 +125,8 @@ export const ProjectProvider: React.FC<{ children: React.ReactNode }> = ({
   const [projects] = useState<Project[]>(initialProjects);
   const [directoryStructure] = useState<DirectoryNode[]>(initialDirectory);
 
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+
   const getProjectsByTitles = (titles?: string[]): Project[] => {
     if (!titles) return [];
     return projects.filter((project) => titles.includes(project.title));
@@ -130,7 +134,13 @@ export const ProjectProvider: React.FC<{ children: React.ReactNode }> = ({
 
   return (
     <ProjectContext.Provider
-      value={{ projects, directoryStructure, getProjectsByTitles }}
+      value={{
+        projects,
+        directoryStructure,
+        getProjectsByTitles,
+        activeCategory,
+        setActiveCategory,
+      }}
     >
       {children}
     </ProjectContext.Provider>

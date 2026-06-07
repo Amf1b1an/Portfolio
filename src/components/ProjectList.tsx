@@ -6,9 +6,9 @@ import { ProjectPage } from "./ProjectPage";
 import type { DirectoryNode, Project } from "../types";
 
 export const ProjectList: React.FC = () => {
-  const { directoryStructure, getProjectsByTitles } = useProjects();
+  const { directoryStructure, getProjectsByTitles, setActiveCategory } =
+    useProjects();
   const [navHistory, setNavHistory] = useState<DirectoryNode[]>([]);
-
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const currentCategory = navHistory[navHistory.length - 1] || null;
@@ -22,12 +22,23 @@ export const ProjectList: React.FC = () => {
 
   const handleCategoryClick = (category: DirectoryNode) => {
     setSelectedProject(null);
-    setNavHistory([...navHistory, category]);
+    const newHistory = [...navHistory, category];
+    setNavHistory(newHistory);
+
+    setActiveCategory(category.id);
   };
 
   const handleBackClick = () => {
     setSelectedProject(null);
-    setNavHistory(navHistory.slice(0, -1));
+    const newHistory = navHistory.slice(0, -1);
+    setNavHistory(newHistory);
+
+    if (newHistory.length === 0) {
+      setActiveCategory(null);
+    } else {
+      const parentCategory = newHistory[newHistory.length - 1];
+      setActiveCategory(parentCategory.id);
+    }
   };
 
   if (selectedProject) {
@@ -54,6 +65,7 @@ export const ProjectList: React.FC = () => {
           {navHistory.map((folder) => ` / ${folder.title}`)}
         </h2>
       </div>
+
       {visibleCategories.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
           {visibleCategories.map((category) => (
@@ -65,17 +77,19 @@ export const ProjectList: React.FC = () => {
           ))}
         </div>
       )}
+
       {visibleProjects.length > 0 && (
         <div className="flex flex-col gap-4">
           {visibleProjects.map((project) => (
             <ProjectCard
               key={project.title}
               project={project}
-              onViewDetails={() => setSelectedProject(project)} // 4. Set state to swap screens
+              onViewDetails={() => setSelectedProject(project)}
             />
           ))}
         </div>
       )}
+
       {visibleCategories.length === 0 && visibleProjects.length === 0 && (
         <div className="text-center py-12 bg-white rounded-xl border border-gray-150 text-gray-400 font-medium">
           No projects added to this section yet!
