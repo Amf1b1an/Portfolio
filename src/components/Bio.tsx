@@ -26,7 +26,7 @@ export function Bio() {
             rel="noopener noreferrer"
             className="text-sm font-semibold text-gray-600 hover:text-cyan-500 dark:text-gray-400 dark:hover:text-cyan-400 transition"
           >
-            GitHub ↗
+            GitHub
           </a>
         </div>
       </div>
