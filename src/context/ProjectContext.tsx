@@ -14,7 +14,7 @@ const initialProjects: Project[] = [
     title: "Game Hub",
     description:
       "This is the first project i made at Noroff. This website is my contribution for Noroffs cross-course project. Which means it has been part of several courses during the first year, starting with the design course and HTML & CSS course in the first semester, and the JavaScript course in the second semester.",
-    thumbnail: "../src/public/thumb/game-hub.png",
+    thumbnail: "/thumb/game-hub.png",
     liveLink: "https://amf1b1an.github.io/JS-CA/",
     repoLink: "https://github.com/Amf1b1an/JS-CA",
   },
@@ -22,7 +22,7 @@ const initialProjects: Project[] = [
     title: "Semester Project 1",
     description:
       "In this semester project we were tasked with creating a website using what we've learnt about design, html and css during the first semester. The challange in this project was to make things work without javascript",
-    thumbnail: "../src/public/thumb/museum.png",
+    thumbnail: "/thumb/museum.png",
     liveLink: "https://amf1b1an.github.io/Semester-Project-1/",
     repoLink: "https://github.com/Amf1b1an/Semester-Project-1",
   },
@@ -30,7 +30,7 @@ const initialProjects: Project[] = [
     title: "Exam Project 1",
     description:
       "This is my first exam project at Noroff. The assignment was to create a blog website, and i decided to create a blog website about music. This project were made from scratch with figma for the design part, and html, css and javascript.",
-    thumbnail: "../src/public/.png",
+    thumbnail: "",
     liveLink: "https://lustrous-starlight-0460ae.netlify.app/",
     repoLink: "https://github.com/Amf1b1an/FED1-PE1-Amf1b1an1",
   },
@@ -39,7 +39,7 @@ const initialProjects: Project[] = [
     title: "Exam Project 2",
     description:
       "The final exam project at Noroff to conclude the education. This assignment ",
-    thumbnail: "../src/public/thumb/holidaze.png",
+    thumbnail: "/thumb/holidaze.png",
     liveLink: "https://holidaze-pe2-amfibian.netlify.app/",
     repoLink: "https://github.com/Amf1b1an/Holidaze-PE2",
   },
@@ -48,7 +48,7 @@ const initialProjects: Project[] = [
     title: "CSS Frameworks",
     description:
       "This course introduced me to bootstrap and tailwind, and how to use it efficiently. Not only that, but also how to implement new elements, like bootstrap for this instance, to already existing projects.",
-    thumbnail: "../src/public/thumb/sphere.png",
+    thumbnail: "/thumb/sphere.png",
     liveLink: "https://amf1b1an.github.io/JS2-CA/pages/feed.html",
     repoLink: "https://github.com/Amf1b1an/JS2-CA",
   },
@@ -64,7 +64,7 @@ const initialProjects: Project[] = [
   {
     title: "JavaScript Frameworks",
     description: "",
-    thumbnail: "../src/public/thumb/theshop.png",
+    thumbnail: "/thumb/theshop.png",
     liveLink: "https://jsftheshop.netlify.app/",
     repoLink:
       "https://github.com/NoroffFEU/jsfw-2025-v1-fabianms-jsf/tree/main/jsf-online-shop",
@@ -74,7 +74,7 @@ const initialProjects: Project[] = [
     title: "Semester Project 2",
     description:
       "The semester project for the 2nd year instructed me to create a website for an online auction house. For this assignment I was allowed to use TypeScript or Vanilla JavaScript.However, the use of JS frameworks were prohibited. Prior to this course was the CSS Frameworks course, which meant that the usage and implementation of Bootstrap or Tailwind were essential. I used Tailwind for this course since I worked with Bootstrap on the CSS Frameworks course",
-    thumbnail: "../src/public/thumb/auction-house.png",
+    thumbnail: "/thumb/auction-house.png",
     liveLink: "https://sp2-fabsan.netlify.app/pages/feed.html",
     repoLink: "https://github.com/Amf1b1an/SP-2",
   },
