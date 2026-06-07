@@ -65,7 +65,8 @@ const initialProjects: Project[] = [
 
   {
     title: "JavaScript Frameworks",
-    description: "",
+    description:
+      "This course introduced me to the usage of JS Frameworks like React or next.js. What I like about React is the component-based structure, and how it lets you turn almost every aspect of a page into either a component or context, this is only improving the DRY principle that we've talked about since beginning of the FED education.",
     thumbnail: "/thumb/theshop.png",
     liveLink: "https://jsftheshop.netlify.app/",
     repoLink: "https://github.com/NoroffFEU/jsfw-2025-v1-fabianms-jsf",
