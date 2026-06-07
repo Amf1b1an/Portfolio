@@ -24,7 +24,7 @@ Make sure you have [Node.js](https://nodejs.org/) (v20 or higher recommended) in
 1. **Clone the repository:**
 
    ```bash
-   git clone git@github.com:Amf1b1an/jsfw-2025-v1-fabianms-jsf.git
+   git clone git clone git@github.com:Amf1b1an/Portfolio.git
 
    cd portfolio
 
