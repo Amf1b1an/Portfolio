@@ -66,8 +66,7 @@ const initialProjects: Project[] = [
     description: "",
     thumbnail: "/thumb/theshop.png",
     liveLink: "https://jsftheshop.netlify.app/",
-    repoLink:
-      "https://github.com/NoroffFEU/jsfw-2025-v1-fabianms-jsf/tree/main/jsf-online-shop",
+    repoLink: "https://github.com/NoroffFEU/jsfw-2025-v1-fabianms-jsf",
   },
 
   {
