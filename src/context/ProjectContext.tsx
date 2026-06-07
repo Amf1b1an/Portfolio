@@ -64,8 +64,8 @@ const initialProjects: Project[] = [
   {
     title: "JavaScript Frameworks",
     description: "",
-    thumbnail: "",
-    liveLink: "",
+    thumbnail: "../src/assets/theShop.png",
+    liveLink: "https://jsftheshop.netlify.app/",
     repoLink:
       "https://github.com/NoroffFEU/jsfw-2025-v1-fabianms-jsf/tree/main/jsf-online-shop",
   },
