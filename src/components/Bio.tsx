@@ -2,13 +2,13 @@ export function Bio() {
   return (
     <section className="max-w-3xl mx-auto px-6 py-12 text-center sm:text-left flex flex-col sm:flex-row items-center gap-8 border-b border-gray-200 dark:border-gray-800 mb-12">
       <div className="space-y-4">
-        <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+        <h1 className="text-4xl font-extrabold tracking-tight text-black dark:text-white">
           Hi, I'm <span className="text-[#713A00]">Fabian</span>
         </h1>
-        <h2 className="text-xl font-medium text-gray-600 dark:text-gray-400">
+        <h2 className="text-xl font-medium text-black dark:text-gray-400">
           FED Student, Noroff Online
         </h2>
-        <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
+        <p className="text-base text-black dark:text-gray-400 leading-relaxed">
           I am a second year student at Noroff FED Online. At Noroff i've
           learned the fundamentals surrounding HTML, CSS and JavaScript, as well
           as more advanced aspects of the fields. Some of my hobbies include
