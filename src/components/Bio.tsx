@@ -3,7 +3,7 @@ export function Bio() {
     <section className="max-w-3xl mx-auto px-6 py-12 text-center sm:text-left flex flex-col sm:flex-row items-center gap-8 border-b border-gray-200 dark:border-gray-800 mb-12">
       <div className="space-y-4">
         <h1 className="text-4xl font-extrabold tracking-tight text-black">
-          Hi, I'm <span className="text-[#713A00]">Fabian</span>
+          Hello, I'm <span className="text-[#713A00]">Fabian</span>
         </h1>
         <h2 className="text-xl font-medium text-black">
           FED Student, Noroff Online
