@@ -5,10 +5,10 @@ export function Bio() {
         <h1 className="text-4xl font-extrabold tracking-tight text-black dark:text-white">
           Hi, I'm <span className="text-[#713A00]">Fabian</span>
         </h1>
-        <h2 className="text-xl font-medium text-black dark:text-gray-400">
+        <h2 className="text-xl font-medium text-black">
           FED Student, Noroff Online
         </h2>
-        <p className="text-base text-black dark:text-gray-400 leading-relaxed">
+        <p className="text-base text-black  leading-relaxed">
           I am a second year student at Noroff FED Online. At Noroff i've
           learned the fundamentals surrounding HTML, CSS and JavaScript, as well
           as more advanced aspects of the fields. Some of my hobbies include
